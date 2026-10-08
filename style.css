@@ -1,0 +1,127 @@
+/* ---------- General ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f4ff;
+  color: #222;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 10px 0;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #1e3be1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form-section,
+.preview-section {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* ---------- Form ---------- */
+fieldset {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #1e3be1;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* ---------- Buttons ---------- */
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1e3be1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #152ca8;
+}
+
+/* ---------- Resume Preview ---------- */
+.resume {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.resume-header {
+  text-align: center;
+  border-bottom: 2px solid #1e3be1;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.resume-header p {
+  margin: 3px 0;
+}
+
+.resume-block {
+  margin-bottom: 15px;
+}
+
+.resume-block h4 {
+  color: #1e3be1;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+}
+
+.resume-block p {
+  margin: 3px 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #0a1744;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

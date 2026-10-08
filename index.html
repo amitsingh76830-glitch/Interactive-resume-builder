@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Resume Builder</h1>
+    <p>Create a professional resume in a simple and easy way.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- LEFT SIDE: Input Form -->
+    <section class="form-section">
+      <h2>Enter Your Details</h2>
+
+      <form id="resumeForm">
+
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" placeholder="Enter your phone number">
+
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Enter your address">
+
+          <label for="summary">Career Objective</label>
+          <textarea id="summary" rows="3" placeholder="Write a short summary about yourself"></textarea>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+          <legend>Education</legend>
+
+          <label for="degree">Degree / Course</label>
+          <input type="text" id="degree" placeholder="e.g. B.Tech CSE">
+
+          <label for="college">College / University</label>
+          <input type="text" id="college" placeholder="Enter your college name">
+
+          <label for="year">Year of Passing</label>
+          <input type="text" id="year" placeholder="e.g. 2027">
+
+          <label for="cgpa">CGPA / Percentage</label>
+          <input type="text" id="cgpa" placeholder="e.g. 8.5">
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+          <legend>Skills</legend>
+
+          <label for="skills">Skills (separate with commas)</label>
+          <textarea id="skills" rows="3" placeholder="e.g. HTML, CSS, JavaScript"></textarea>
+        </fieldset>
+
+        <!-- Projects -->
+        <fieldset>
+          <legend>Projects</legend>
+
+          <label for="projectTitle">Project Title</label>
+          <input type="text" id="projectTitle" placeholder="Enter project title">
+
+          <label for="projectDesc">Project Description</label>
+          <textarea id="projectDesc" rows="3" placeholder="Describe your project"></textarea>
+        </fieldset>
+
+        <!-- Experience -->
+        <fieldset>
+          <legend>Experience</legend>
+
+          <label for="company">Company / Organization</label>
+          <input type="text" id="company" placeholder="Enter company name">
+
+          <label for="role">Role</label>
+          <input type="text" id="role" placeholder="e.g. Web Developer Intern">
+
+          <label for="duration">Duration</label>
+          <input type="text" id="duration" placeholder="e.g. Jan 2025 - Mar 2025">
+
+          <label for="expDesc">Description</label>
+          <textarea id="expDesc" rows="3" placeholder="Describe your work"></textarea>
+        </fieldset>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <button type="button" id="generateBtn">Generate Resume</button>
+          <button type="reset" id="resetBtn">Reset</button>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- RIGHT SIDE: Resume Preview -->
+    <section class="preview-section">
+      <h2>Resume Preview</h2>
+
+      <div class="resume" id="resumeOutput">
+
+        <!-- Personal Details -->
+        <div class="resume-header">
+          <h3 id="outName">Your Name</h3>
+          <p id="outEmail">youremail@example.com</p>
+          <p id="outPhone">+91 00000 00000</p>
+          <p id="outAddress">Your Address</p>
+        </div>
+
+        <!-- Objective -->
+        <div class="resume-block">
+          <h4>Career Objective</h4>
+          <p id="outSummary">Your summary will appear here.</p>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-block">
+          <h4>Education</h4>
+          <p id="outDegree">Degree</p>
+          <p id="outCollege">College</p>
+          <p id="outYear">Year</p>
+          <p id="outCgpa">CGPA</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="resume-block">
+          <h4>Skills</h4>
+          <ul id="outSkills">
+            <li>Your skills will appear here</li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="resume-block">
+          <h4>Projects</h4>
+          <p id="outProjectTitle">Project Title</p>
+          <p id="outProjectDesc">Project description</p>
+        </div>
+
+        <!-- Experience -->
+        <div class="resume-block">
+          <h4>Experience</h4>
+          <p id="outCompany">Company</p>
+          <p id="outRole">Role</p>
+          <p id="outDuration">Duration</p>
+          <p id="outExpDesc">Experience description</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made by Amit Singh | B.Tech CSE</p>
+  </footer>
+
+</body>
+</html>
